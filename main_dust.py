@@ -4,7 +4,7 @@ from margolus import *
 
 def main():
     SIZE = 130
-    GRID = initialize_grid_lines(SIZE)
+    GRID = initialize_grid1(SIZE)
     PARITY = 0
     INCR = 0
 
