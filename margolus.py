@@ -15,7 +15,7 @@ class MargolusRules(dict):
                 self[k] = v
 
 
-def update_neighborhood(i, j, grid, rules):
+def margolus_neighborhood_gen(i, j, grid, rules):
     m, n = grid.shape
     neighborhood = [
         (i % m, j % n),
@@ -49,4 +49,4 @@ def margolus_gen(grid, rules, parity, boundary=None):
 
     for i in i_range:
         for j in j_range:
-            update_neighborhood(i, j, grid, rules)
+            margolus_neighborhood_gen(i, j, grid, rules)
