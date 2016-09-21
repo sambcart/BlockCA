@@ -13,6 +13,7 @@ if __name__ == "__main__":
 
     while True:
         margolus_gen(GRID, TRON_RULES, PARITY)
+        #img_plot.set_data(GRID)
         img_plot.set_data(PARITY - GRID)
         fig.canvas.draw()
         PARITY = 1 - PARITY
